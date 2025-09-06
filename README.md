@@ -1,24 +1,95 @@
-# Week 2 Project: Build the charity: water Landing Page
-To get started, create a new Codespace from this repo.
+🌍 Charity: Water Landing Page
 
-In this Project, you’ll transform your Canva mockup into a fully functional landing page using HTML and CSS. This is your chance to take your creative concept — with your brand visuals, your messaging, and your imagery — and make it real. You'll build a site that not only looks great, but also educates, inspires, and drives action.
+A fully branded landing page built for charity: water, designed to connect with college students and inspire them to take action on the global water crisis. This project takes my Canva mockup from Milestone 1 and transforms it into a fully functional web page using HTML and CSS.
 
-With help from AI to jumpstart your layout, you'll focus on structuring your content, applying your brand style, and creating a polished final product that reflects your vision. By the end of this Project, you’ll have a live, interactive page deployed to the web. You can share this work when you want to showcase your technical skills and your passion for digital storytelling. 
+📖 Project Overview
 
-## charity: water Brand Colors & Fonts
+Course Project: Week 2 – Build a Landing Page for charity: water
 
-### Primary Colors:
-- Yellow:     `#FFC907`
-- Blue:       `#2E9DF7`
+Goal: Translate a Canva design into code while maintaining brand consistency.
 
-### Secondary Colors:
-- Light Blue: `#8BD1CB`
-- Green:      `#4FCB53`
-- Orange:     `#FF902A`
-- Red:        `#F5402C`
-- Dark Green: `#159A48`
-- Pink:       `#F16061`
+Focus: Storytelling, clean layout, strong call-to-action (CTA).
 
-### Fonts:
-- Proxima Nova
-- Avenir
+Tools Used:
+
+HTML5
+
+CSS3
+
+VS Code + GitHub Codespaces
+
+GitHub Pages (for deployment)
+
+🖼️ Design Inspiration
+
+The landing page is based on a split-screen hero layout:
+
+Left side: White background with logo, headline, subheadline, supporting text, and CTA buttons.
+
+Right side: Full-height hero image of a student-aged woman carrying a yellow Jerry can, symbolizing the impact of clean water access.
+
+This design follows charity: water’s brand guidelines:
+
+Jerry Can Yellow #FFC907 → Buttons & highlights
+
+Deep Blue #003366 → Headline text
+
+Black #1A1A1A → Supporting text
+
+Font family: Source Sans Pro
+ (clean, modern, accessible).
+
+🛠️ Features
+
+✅ Clean split hero layout
+✅ Prominent “Join the Movement” CTA button
+✅ Responsive design for desktop and mobile (extra credit)
+✅ Deployed via GitHub Pages
+✅ Beginner-friendly HTML & CSS only — no frameworks
+
+🚀 Deployment
+
+The site is live here:
+👉 GitHub Pages Link
+
+To run locally:
+
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+open index.html
+
+📌 Reflection
+
+This project challenged me to:
+
+Translate a Canva mockup into functional code.
+
+Stay faithful to charity: water’s brand identity.
+
+Use AI-assisted coding responsibly, refining beyond the starter code.
+
+Deploy a site on GitHub Pages for a professional portfolio.
+
+📋 Rubric Alignment
+
+Campaign Page Execution: Includes headline, story, CTA, imagery.
+
+Styling & Branding: Color palette, typography, visuals match mockup.
+
+AI Starter Code: Customized and expanded for clarity and polish.
+
+Deployment: Live via GitHub Pages.
+
+LevelUp (Extra Credit): Responsive layout + hover effects.
+
+🧑‍💻 Author
+
+Kaleb Botts
+
+Cybersecurity & Digital Marketing Student
+
+University of Cincinnati
+
+LinkedIn
+
+✨ Developed a fully branded landing page for a non-profit using AI coding assistance, HTML, CSS, and GitHub Pages.
