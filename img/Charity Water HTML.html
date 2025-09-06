@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charity: Water Landing Page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Charity Water CSS.css">
+</head>
+<body>
+  <!-- Main Container Split -->
+  <div class="main-container">
+    <!-- Left Container (50%) -->
+    <div class="left-container">
+      <!-- Navigation -->
+      <header class="navbar">
+        <img src="cw_logo-2.png" alt="Charity Water Logo" class="logo">
+        <a href="https://www.charitywater.org/donate" target="_blank" class="donate-top">DONATE NOW</a>
+      </header>
+
+      <!-- Content Section -->
+      <section class="content-section">
+        <h1 class="main-header">From Dorms to Wells:</h1>
+        <h2 class="sub-header">Clean water starts with us</h2>
+        <p class="supporting-text">Students everywhere are taking action — your generation can end the clean water crisis</p>
+        <a href="https://www.charitywater.org/get-involved" target="_blank" class="donate-button">Join the Movement</a>
+        <p class="learn-more"><a href="https://www.charitywater.org/about" target="_blank">Learn More →</a></p>
+      </section>
+    </div>
+
+    <!-- Right Container (50%) -->
+    <div class="right-container">
+      <div class="hero-image">
+        <div class="slideshow-container">
+          <div class="slide active">
+            <img src="water7.jpg" alt="Smiling woman carrying water">
+          </div>
+          <div class="slide">
+            <img src="water1.jpg" alt="Water image 1">
+          </div>
+          <div class="slide">
+            <img src="water2.jpg" alt="Water image 2">
+          </div>
+          <div class="slide">
+            <img src="water4.jpg" alt="Water image 4">
+          </div>
+          <div class="slide">
+            <img src="water5.jpg" alt="Water image 5">
+          </div>
+          <div class="slide">
+            <img src="water6.jpg" alt="Water image 6">
+          </div>
+          <div class="slide">
+            <img src="water9.jpg" alt="Water image 9">
+          </div>
+          <div class="slide">
+            <img src="water10.jpg" alt="Water image 10">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Slideshow functionality
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+    const totalSlides = slides.length;
+    let slideTimer;
+    let isMobile = window.innerWidth <= 768;
+
+    function showSlide(index) {
+      slides.forEach(slide => slide.classList.remove('active'));
+      slides[index].classList.add('active');
+    }
+
+    function nextSlide() {
+      currentSlide = (currentSlide + 1) % totalSlides;
+      showSlide(currentSlide);
+      
+      // Set different timing based on current slide
+      clearTimeout(slideTimer);
+      if (currentSlide === 0) {
+        // water7.jpg stays for 10 seconds
+        slideTimer = setTimeout(nextSlide, 10000);
+      } else {
+        // Other images stay for 4 seconds
+        slideTimer = setTimeout(nextSlide, 4000);
+      }
+    }
+
+    function initializeSlideshow() {
+      isMobile = window.innerWidth <= 768;
+      
+      if (isMobile) {
+        // On mobile, disable auto-advance and show all slides
+        clearTimeout(slideTimer);
+        slides.forEach(slide => slide.classList.add('active'));
+      } else {
+        // On desktop, use the original slideshow functionality
+        showSlide(0);
+        slideTimer = setTimeout(nextSlide, 10000);
+      }
+    }
+
+    // Initialize slideshow based on screen size
+    initializeSlideshow();
+
+    // Re-initialize on window resize
+    window.addEventListener('resize', initializeSlideshow);
+  </script>
+</body>
+</html>
